@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 23 22:49:14 2021
+# Process ID: 6796
+# Current directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_3/Lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13720 C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_3\Lab3\Lab3.xpr
+# Log file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_3/Lab3/vivado.log
+# Journal file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_3/Lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_3/Lab3/Lab3.xpr}
+update_compile_order -fileset sources_1
