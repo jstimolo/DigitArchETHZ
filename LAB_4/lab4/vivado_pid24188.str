@@ -1,0 +1,1853 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 24188
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Apr 30 22:20:02 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2256x1504
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	jstimolo
+User home directory: C:/Users/jstimolo
+User working directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4
+User country: 	CH
+User language: 	it
+User locale: 	it_CH
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/vivado.log
+Vivado journal file location: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/vivado.jou
+Engine tmp dir: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/.Xil/Vivado-24188-LAPTOP-OT7UM52C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	164 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,110 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 103 MB (+105066kb) [00:00:06]
+// [Engine Memory]: 1,110 MB (+1012656kb) [00:00:06]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_4\lab4\lab4.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 122 MB (+15027kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3690 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,110 MB. GUI used memory: 71 MB. Current time: 4/30/21, 10:20:06 PM CEST
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.621 ; gain = 0.000 
+// Project name: lab4; location: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (LED_Dimmer.v)]", 1, true); // D - Node
+// [GUI Memory]: 131 MB (+3340kb) [00:00:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (LED_Dimmer.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 142 MB (+4098kb) [00:00:37]
+// Elapsed time: 16 seconds
+selectCodeEditor("LED_Dimmer.v", 8, 282); // bP
+selectCodeEditor("LED_Dimmer.v", 6, 282); // bP
+selectCodeEditor("LED_Dimmer.v", 0, 285); // bP
+selectCodeEditor("LED_Dimmer.v", 77, 402); // bP
+selectCodeEditor("LED_Dimmer.v", 280, 442); // bP
+selectCodeEditor("LED_Dimmer.v", 306, 438); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("LED_Dimmer.v", 338, 443); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 343, 429); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+// Elapsed time: 11 seconds
+selectButton("FindAndReplaceDialog.cr_Close", "Close"); // JButton
+selectButton("FindAndReplaceDialog.cr_Close", "Close"); // JButton
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 373, 558); // bP
+selectCodeEditor("LED_Dimmer.v", 57, 586); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 155 MB (+6024kb) [00:02:44]
+// Tcl Message: [Fri Apr 30 22:22:36 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:22:36 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Failed: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 14 seconds
+selectCodeEditor("LED_Dimmer.v", 96, 550); // bP
+selectCodeEditor("LED_Dimmer.v", 466, 457); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:24:03 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Blinker.xdc]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Blinker.xdc]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Blinker.xdc", 771, 68); // bP
+selectCodeEditor("Blinker.xdc", 2, 64); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LED_Dimmer.v", 1); // m
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Apr 30 22:25:47 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:25:47 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 84 seconds
+selectCodeEditor("LED_Dimmer.v", 88, 471); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Open Implemented Design : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 90 MB. Current time: 4/30/21, 10:27:28 PM CEST
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'dV' command handler elapsed time: 6 seconds
+// [Engine Memory]: 1,556 MB (+408977kb) [00:07:38]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,959 MB. GUI used memory: 90 MB. Current time: 4/30/21, 10:27:40 PM CEST
+// [Engine Memory]: 1,978 MB (+361528kb) [00:07:48]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 164 MB (+1232kb) [00:07:50]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2331 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.223 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2022.414 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2022.414 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.414 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 2122.234 ; gain = 1012.613 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 177 MB (+5803kb) [00:07:52]
+// [Engine Memory]: 2,092 MB (+15812kb) [00:07:52]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 17 seconds
+dismissDialog("Open Implemented Design"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:27:51 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:27:51 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 189 MB (+3096kb) [00:09:37]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 2,197 MB (+24kb) [00:10:08]
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,197 MB. GUI used memory: 131 MB. Current time: 4/30/21, 10:30:03 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4755 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3827CA 
+// bz (cr):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 3,682 MB (+1441957kb) [00:10:17]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 33 seconds
+selectCodeEditor("LED_Dimmer.v", 353, 297); // bP
+selectCodeEditor("LED_Dimmer.v", 346, 312); // bP
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:31:14 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 38 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 22:32:04 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:32:04 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 119 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 15 seconds
+selectCodeEditor("LED_Dimmer.v", 339, 320); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:34:32 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+selectCodeEditor("LED_Dimmer.v", 366, 418); // bP
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LED_Dimmer.v", 992, 396); // bP
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 39 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:35:20 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:35:20 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+selectCodeEditor("LED_Dimmer.v", 342, 609); // bP
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LED_Dimmer.v", 263, 458); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 127 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, "Generate Memory Configuration File"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE
+// aU (cr): Write Memory Configuration File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Write Memory Configuration File"); // aU
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 118 seconds
+selectCodeEditor("LED_Dimmer.v", 183, 391); // bP
+selectCodeEditor("LED_Dimmer.v", 783, 314); // bP
+// Elapsed time: 123 seconds
+selectCodeEditor("LED_Dimmer.v", 768, 380); // bP
+// Elapsed time: 31 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 28 seconds
+selectCodeEditor("LED_Dimmer.v", 323, 432); // bP
+selectCodeEditor("LED_Dimmer.v", 143, 325); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("LED_Dimmer.v", 83, 338); // bP
+selectCodeEditor("LED_Dimmer.v", 51, 363); // bP
+selectCodeEditor("LED_Dimmer.v", 193, 337); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("LED_Dimmer.v", 232, 359); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("LED_Dimmer.v", 500, 349); // bP
+selectCodeEditor("LED_Dimmer.v", 494, 362); // bP
+selectCodeEditor("LED_Dimmer.v", 71, 361); // bP
+selectCodeEditor("LED_Dimmer.v", 207, 357); // bP
+// Elapsed time: 75 seconds
+selectCodeEditor("LED_Dimmer.v", 113, 390); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("LED_Dimmer.v", 387, 349); // bP
+selectCodeEditor("LED_Dimmer.v", 311, 290); // bP
+selectCodeEditor("LED_Dimmer.v", 239, 295); // bP
+selectCodeEditor("LED_Dimmer.v", 234, 290); // bP
+selectCodeEditor("LED_Dimmer.v", 254, 317); // bP
+selectCodeEditor("LED_Dimmer.v", 190, 239); // bP
+selectCodeEditor("LED_Dimmer.v", 166, 213); // bP
+selectCodeEditor("LED_Dimmer.v", 218, 135); // bP
+selectCodeEditor("LED_Dimmer.v", 387, 41); // bP
+// Elapsed time: 33 seconds
+selectCodeEditor("LED_Dimmer.v", 310, 367); // bP
+selectCodeEditor("LED_Dimmer.v", 266, 335); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("LED_Dimmer.v", 293, 445); // bP
+selectCodeEditor("LED_Dimmer.v", 306, 469); // bP
+selectCodeEditor("LED_Dimmer.v", 92, 310); // bP
+selectCodeEditor("LED_Dimmer.v", 305, 462); // bP
+selectCodeEditor("LED_Dimmer.v", 258, 287); // bP
+selectCodeEditor("LED_Dimmer.v", 253, 259); // bP
+selectCodeEditor("LED_Dimmer.v", 827, 265); // bP
+selectCodeEditor("LED_Dimmer.v", 304, 305); // bP
+selectCodeEditor("LED_Dimmer.v", 291, 284); // bP
+selectCodeEditor("LED_Dimmer.v", 333, 386); // bP
+selectCodeEditor("LED_Dimmer.v", 300, 282); // bP
+selectCodeEditor("LED_Dimmer.v", 253, 391); // bP
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+dismissDialog("Save Project"); // am
+// Elapsed time: 33 seconds
+selectCodeEditor("LED_Dimmer.v", 104, 529); // bP
+selectCodeEditor("LED_Dimmer.v", 112, 535); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:49:09 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 39 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 22:49:54 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:49:54 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 94 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+// Elapsed time: 16 seconds
+selectCodeEditor("LED_Dimmer.v", 85, 493); // bP
+selectCodeEditor("LED_Dimmer.v", 114, 487); // bP
+selectCodeEditor("LED_Dimmer.v", 196, 489); // bP
+selectCodeEditor("LED_Dimmer.v", 271, 496); // bP
+selectCodeEditor("LED_Dimmer.v", 315, 488); // bP
+selectCodeEditor("LED_Dimmer.v", 357, 484); // bP
+selectCodeEditor("LED_Dimmer.v", 427, 502); // bP
+selectCodeEditor("LED_Dimmer.v", 400, 480); // bP
+selectCodeEditor("LED_Dimmer.v", 414, 631); // bP
+selectCodeEditor("LED_Dimmer.v", 418, 627); // bP
+selectCodeEditor("LED_Dimmer.v", 395, 646); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cr): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a
+// am (cr): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// bz (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:52:20 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Reloading : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,726 MB. GUI used memory: 136 MB. Current time: 4/30/21, 10:53:20 PM CEST
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,732 MB. GUI used memory: 122 MB. Current time: 4/30/21, 10:53:21 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,732 MB. GUI used memory: 123 MB. Current time: 4/30/21, 10:53:21 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// Tcl Message: refresh_design 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,732 MB. GUI used memory: 103 MB. Current time: 4/30/21, 10:53:22 PM CEST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2579 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3832.020 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 3832.020 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 3832.020 ; gain = 0.000 
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3842.238 ; gain = 18.375 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Reloading"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 22:53:30 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 22:53:30 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// [GUI Memory]: 204 MB (+5279kb) [00:33:38]
+// TclEventType: RUN_STATUS_CHANGE
+// Device view-level: 0.2
+// HMemoryUtils.trashcanNow. Engine heap size: 3,823 MB. GUI used memory: 138 MB. Current time: 4/30/21, 10:53:41 PM CEST
+// Device view-level: 0.5
+// Device view-level: 0.8
+// Device view-level: 1.1
+// Device view-level: 1.4
+// Device view-level: 1.7
+// Device view-level: 2.0
+// HMemoryUtils.trashcanNow. Engine heap size: 3,824 MB. GUI used memory: 139 MB. Current time: 4/30/21, 10:53:43 PM CEST
+// Device view-level: 2.3
+// Device view-level: 2.6
+// Device view-level: 2.9
+// Device view-level: 3.2
+// HMemoryUtils.trashcanNow. Engine heap size: 3,826 MB. GUI used memory: 140 MB. Current time: 4/30/21, 10:53:45 PM CEST
+// Device view-level: 3.5
+// Device view-level: 3.8
+// Elapsed time: 16 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 119639, 148367); // E
+// Device view-level: 5.3
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 119866, 148452); // E
+// Device view-level: 4.4
+// [GUI Memory]: 214 MB (+81kb) [00:33:57]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 120485, 148422); // E
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 3,830 MB. GUI used memory: 178 MB. Current time: 4/30/21, 10:53:51 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 351211, 284013); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 278367, 249636); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 273456, 277465); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 273456, 279920, false, true, false, false, false); // E - Control Key
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 252994, 242270, false, true, false, false, false); // E - Control Key
+// PAPropertyPanels.initPanels (Tile: CLBLM_R_X35Y82) elapsed time: 0.2s
+// Device view-level: 0.2
+// Device view-level: 0.5
+// HMemoryUtils.trashcanNow. Engine heap size: 3,830 MB. GUI used memory: 207 MB. Current time: 4/30/21, 10:53:56 PM CEST
+// Device view-level: 0.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 310901, 247363); // E
+// Device view-level: 1.1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 266764, 257710); // E
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 343026, 297927); // E
+// Device view-level: 0.2
+// HMemoryUtils.trashcanNow. Engine heap size: 3,831 MB. GUI used memory: 171 MB. Current time: 4/30/21, 10:54:01 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 298283, 271735); // E
+// Device view-level: 2.1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 314171, 283420); // E
+// Device view-level: 3.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 314860, 284672); // E
+// Device view-level: 4.5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 315303, 285090); // E
+// Device view-level: 5.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 315431, 285169); // E
+// Device view-level: 5.6
+// HMemoryUtils.trashcanNow. Engine heap size: 3,834 MB. GUI used memory: 149 MB. Current time: 4/30/21, 10:54:06 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 315479, 285170); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 315613, 285222); // E
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 356941, 327392); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 209614, 321663); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 135951, 225901); // E
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Device view-level: 1.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 128996, 243906); // E
+// Device view-level: 2.0
+// HMemoryUtils.trashcanNow. Engine heap size: 3,834 MB. GUI used memory: 142 MB. Current time: 4/30/21, 10:54:14 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 138858, 260231); // E
+// Device view-level: 2.9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 140688, 264333); // E
+// Device view-level: 3.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 141530, 265568); // E
+// Device view-level: 4.2
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 142238, 266363); // E
+// Device view-level: 4.7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143151, 266955); // E
+// Device view-level: 5.6
+// HMemoryUtils.trashcanNow. Engine heap size: 3,834 MB. GUI used memory: 143 MB. Current time: 4/30/21, 10:54:20 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143254, 267022); // E
+// Device view-level: 5.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143265, 266979); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143317, 266980); // E
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143516, 267045); // E
+// Device view-level: 0.0
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 52 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LED_Dimmer.v", 2); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("LED_Dimmer.v", 131, 264); // bP
+selectCodeEditor("LED_Dimmer.v", 182, 43); // bP
+selectCodeEditor("LED_Dimmer.v", 97, 39); // bP
+// Elapsed time: 33 seconds
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 179, 282); // bP
+selectCodeEditor("LED_Dimmer.v", 54, 299); // bP
+selectCodeEditor("LED_Dimmer.v", 46, 304); // bP
+selectCodeEditor("LED_Dimmer.v", 46, 298); // bP
+selectCodeEditor("LED_Dimmer.v", 172, 239); // bP
+selectCodeEditor("LED_Dimmer.v", 249, 265); // bP
+selectCodeEditor("LED_Dimmer.v", 264, 273); // bP
+selectCodeEditor("LED_Dimmer.v", 324, 271); // bP
+selectCodeEditor("LED_Dimmer.v", 155, 198); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LED_Dimmer.v", 121, 321); // bP
+selectCodeEditor("LED_Dimmer.v", 119, 193); // bP
+selectCodeEditor("LED_Dimmer.v", 133, 254); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("LED_Dimmer.v", 116, 217); // bP
+selectCodeEditor("LED_Dimmer.v", 221, 405); // bP
+selectCodeEditor("LED_Dimmer.v", 138, 412); // bP
+selectCodeEditor("LED_Dimmer.v", 189, 210); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 49, 420); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 98, 212); // bP
+selectCodeEditor("LED_Dimmer.v", 116, 443); // bP
+// Elapsed time: 23 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LED_Dimmer.v", 266, 295); // bP
+selectCodeEditor("LED_Dimmer.v", 69, 296); // bP
+selectCodeEditor("LED_Dimmer.v", 179, 501); // bP
+selectCodeEditor("LED_Dimmer.v", 4, 462); // bP
+selectCodeEditor("LED_Dimmer.v", 4, 339); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("LED_Dimmer.v", 505, 330); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 22:58:41 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 37 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectCodeEditor("LED_Dimmer.v", 351, 472); // bP
+selectCodeEditor("LED_Dimmer.v", 344, 465); // bP
+selectCodeEditor("LED_Dimmer.v", 329, 381); // bP
+// Elapsed time: 43 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/LC_i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/LC_i_1.. ]", 14, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/LC_i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/LC_i_1.. ]", 14, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/LC_i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/LC_i_1.. ]", 14, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/LC_i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/LC_i_1.. ]", 14, true); // ah - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Blinker.xdc", 3); // m
+selectCodeEditor("Blinker.xdc", 12, 64); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:00:23 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:00:23 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// bz (cr):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Synthesis Failed: addNotify
+// Elapsed time: 20 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] procedural assign not supported [C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.srcs/sources_1/new/LED_Dimmer.v:173]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_4\lab4\lab4.srcs\sources_1\new\LED_Dimmer.v;-;;-;16;-;line;-;173;-;;-;16;-;"); // ah
+selectCodeEditor("LED_Dimmer.v", 75, 331); // bP
+selectCodeEditor("LED_Dimmer.v", 113, 347); // bP
+selectCodeEditor("LED_Dimmer.v", 85, 343); // bP
+selectCodeEditor("LED_Dimmer.v", 123, 327); // bP
+selectCodeEditor("LED_Dimmer.v", 166, 368); // bP
+selectCodeEditor("LED_Dimmer.v", 158, 417); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:01:24 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:01:24 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCodeEditor("LED_Dimmer.v", 164, 367); // bP
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:02:12 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:02:12 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 94 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:03:56 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 37 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/i__i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/i__i_1.. ]", 23, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "net;-;nolabel_line64/i__i_1_n_0;-;;-;10;-;"); // ah
+// HOptionPane Warning: 'Cannot find net. (Select Object)'
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:04:58 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 36 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 22 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/i__i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/i__i_1.. ]", 17, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is nolabel_line64/i__i_1_n_0. Please evaluate your design. The cells in the loop are: nolabel_line64/i__i_1.. ]", 17, true, false, false, false, true, false); // ah - Popup Trigger - Node
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ah
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Blinker.xdc", 3); // m
+selectCodeEditor("Blinker.xdc", 805, 78); // bP
+typeControlKey((HResource) null, "Blinker.xdc", 'v'); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:06:53 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:06:53 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 115 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 36 seconds
+selectCodeEditor("LED_Dimmer.v", 48, 322); // bP
+selectCodeEditor("LED_Dimmer.v", 57, 333); // bP
+// Elapsed time: 33 seconds
+selectCodeEditor("LED_Dimmer.v", 548, 371); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LED_Dimmer.v", 113, 293); // bP
+selectCodeEditor("LED_Dimmer.v", 587, 352); // bP
+selectCodeEditor("LED_Dimmer.v", 291, 422); // bP
+selectCodeEditor("LED_Dimmer.v", 604, 333); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 596, 334); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("LED_Dimmer.v", 327, 350); // bP
+selectCodeEditor("LED_Dimmer.v", 546, 342); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 137, 340); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 503, 336); // bP
+selectCodeEditor("LED_Dimmer.v", 510, 341); // bP
+selectCodeEditor("LED_Dimmer.v", 512, 339); // bP
+selectCodeEditor("LED_Dimmer.v", 535, 347); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 587, 334); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 580, 329); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LED_Dimmer.v", 293, 366); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("LED_Dimmer.v", 148, 573); // bP
+selectCodeEditor("LED_Dimmer.v", 110, 594); // bP
+selectCodeEditor("LED_Dimmer.v", 59, 126); // bP
+selectCodeEditor("LED_Dimmer.v", 253, 540); // bP
+selectCodeEditor("LED_Dimmer.v", 212, 540); // bP
+selectCodeEditor("LED_Dimmer.v", 156, 269); // bP
+selectCodeEditor("LED_Dimmer.v", 224, 550); // bP
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 115, 407); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("LED_Dimmer.v", 422, 443); // bP
+selectCodeEditor("LED_Dimmer.v", 487, 476); // bP
+selectCodeEditor("LED_Dimmer.v", 69, 591); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// bz (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:12:48 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// [GUI Memory]: 228 MB (+3652kb) [00:52:56]
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 25 seconds
+selectCodeEditor("LED_Dimmer.v", 202, 647); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Implementation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:13:49 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:13:49 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCodeEditor("LED_Dimmer.v", 102, 640); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("LED_Dimmer.v", 76, 272); // bP
+selectCodeEditor("LED_Dimmer.v", 148, 412); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LED_Dimmer.v", 143, 262); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("LED_Dimmer.v", 343, 440); // bP
+selectCodeEditor("LED_Dimmer.v", 594, 463); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'c'); // bP
+selectCodeEditor("LED_Dimmer.v", 449, 403, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("LED_Dimmer.v", 449, 403); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 626, 455); // bP
+selectCodeEditor("LED_Dimmer.v", 775, 559); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("LED_Dimmer.v", 77, 442); // bP
+selectCodeEditor("LED_Dimmer.v", 76, 430); // bP
+selectCodeEditor("LED_Dimmer.v", 76, 436); // bP
+selectCodeEditor("LED_Dimmer.v", 31, 444); // bP
+selectCodeEditor("LED_Dimmer.v", 72, 467); // bP
+selectCodeEditor("LED_Dimmer.v", 34, 461); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:16:14 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:16:14 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LED_Dimmer.v", 71, 191); // bP
+selectCodeEditor("LED_Dimmer.v", 115, 442); // bP
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_STATUS_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCodeEditor("LED_Dimmer.v", 75, 430); // bP
+selectCodeEditor("LED_Dimmer.v", 76, 467); // bP
+selectCodeEditor("LED_Dimmer.v", 72, 493); // bP
+selectCodeEditor("LED_Dimmer.v", 72, 516); // bP
+selectCodeEditor("LED_Dimmer.v", 72, 544); // bP
+selectCodeEditor("LED_Dimmer.v", 75, 567); // bP
+selectCodeEditor("LED_Dimmer.v", 34, 481); // bP
+selectCodeEditor("LED_Dimmer.v", 27, 510); // bP
+selectCodeEditor("LED_Dimmer.v", 34, 518); // bP
+selectCodeEditor("LED_Dimmer.v", 37, 537); // bP
+selectCodeEditor("LED_Dimmer.v", 33, 567); // bP
+selectCodeEditor("LED_Dimmer.v", 130, 411); // bP
+selectCodeEditor("LED_Dimmer.v", 149, 418); // bP
+// Elapsed time: 37 seconds
+selectCodeEditor("LED_Dimmer.v", 173, 455); // bP
+selectCodeEditor("LED_Dimmer.v", 308, 463); // bP
+selectCodeEditor("LED_Dimmer.v", 401, 465); // bP
+selectCodeEditor("LED_Dimmer.v", 522, 472); // bP
+selectCodeEditor("LED_Dimmer.v", 0, 469); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("LED_Dimmer.v", 118, 322); // bP
+selectCodeEditor("LED_Dimmer.v", 116, 285); // bP
+selectCodeEditor("LED_Dimmer.v", 114, 344); // bP
+selectCodeEditor("LED_Dimmer.v", 109, 367); // bP
+selectCodeEditor("LED_Dimmer.v", 123, 398); // bP
+selectCodeEditor("LED_Dimmer.v", 122, 415); // bP
+selectCodeEditor("LED_Dimmer.v", 39, 482); // bP
+selectCodeEditor("LED_Dimmer.v", 34, 480); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("LED_Dimmer.v", 47, 438); // bP
+selectCodeEditor("LED_Dimmer.v", 2, 447); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LED_Dimmer.v", 1, 443); // bP
+selectCodeEditor("LED_Dimmer.v", 473, 420); // bP
+selectCodeEditor("LED_Dimmer.v", 481, 544); // bP
+selectCodeEditor("LED_Dimmer.v", 516, 554); // bP
+selectCodeEditor("LED_Dimmer.v", 575, 451); // bP
+selectCodeEditor("LED_Dimmer.v", 42, 439); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("LED_Dimmer.v", 77, 485); // bP
+selectCodeEditor("LED_Dimmer.v", 23, 499); // bP
+selectCodeEditor("LED_Dimmer.v", 30, 494); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("LED_Dimmer.v", 76, 212); // bP
+selectCodeEditor("LED_Dimmer.v", 71, 233); // bP
+selectCodeEditor("LED_Dimmer.v", 136, 464); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("LED_Dimmer.v", 305, 334); // bP
+selectCodeEditor("LED_Dimmer.v", 2, 438); // bP
+selectCodeEditor("LED_Dimmer.v", 3, 466); // bP
+selectCodeEditor("LED_Dimmer.v", 5, 488); // bP
+selectCodeEditor("LED_Dimmer.v", 1, 514); // bP
+selectCodeEditor("LED_Dimmer.v", 1, 543); // bP
+selectCodeEditor("LED_Dimmer.v", 5, 566); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:20:22 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:20:22 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 113 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 20 seconds
+selectCodeEditor("LED_Dimmer.v", 167, 520); // bP
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:23:02 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 38 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:23:45 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:23:45 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,836 MB. GUI used memory: 145 MB. Current time: 4/30/21, 11:24:24 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 124 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 32 seconds
+selectCodeEditor("LED_Dimmer.v", 202, 442); // bP
+selectCodeEditor("LED_Dimmer.v", 185, 461); // bP
+selectCodeEditor("LED_Dimmer.v", 198, 484); // bP
+selectCodeEditor("LED_Dimmer.v", 209, 510); // bP
+selectCodeEditor("LED_Dimmer.v", 216, 529); // bP
+selectCodeEditor("LED_Dimmer.v", 209, 532); // bP
+selectCodeEditor("LED_Dimmer.v", 209, 532); // bP
+selectCodeEditor("LED_Dimmer.v", 207, 559); // bP
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 30 23:26:45 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 36 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Apr 30 23:27:27 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/synth_1/runme.log [Fri Apr 30 23:27:27 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 117 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 61 seconds
+selectCodeEditor("LED_Dimmer.v", 365, 263); // bP
+// Elapsed time: 47 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 35 seconds
+selectCodeEditor("LED_Dimmer.v", 372, 493); // bP
+selectCodeEditor("LED_Dimmer.v", 365, 482); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LED_Dimmer.v", 443, 195); // bP
+selectCodeEditor("LED_Dimmer.v", 184, 190); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LED_Dimmer.v", 278, 213); // bP
+selectCodeEditor("LED_Dimmer.v", 290, 240); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LED_Dimmer.v", 463, 221); // bP
+selectCodeEditor("LED_Dimmer.v", 397, 247); // bP
+// Elapsed time: 54 seconds
+selectCodeEditor("LED_Dimmer.v", 513, 603); // bP
+selectCodeEditor("LED_Dimmer.v", 255, 184); // bP
+typeControlKey((HResource) null, "LED_Dimmer.v", 'v'); // bP
+selectCodeEditor("LED_Dimmer.v", 512, 150); // bP
+selectCodeEditor("LED_Dimmer.v", 525, 167); // bP
+// Elapsed time: 119 seconds
+closeMainWindow("lab4 - [C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_4/lab4/lab4.xpr] - Vivado 2020.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// am (cr): Save Project: addNotify
