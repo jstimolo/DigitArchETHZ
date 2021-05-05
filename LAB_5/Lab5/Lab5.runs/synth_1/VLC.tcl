@@ -94,6 +94,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.srcs/constrs_1/new/Timing_Delay.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.srcs/constrs_1/new/Timing_Delay.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

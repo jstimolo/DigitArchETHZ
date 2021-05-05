@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Apr 14 18:06:45 2021
+| Date         : Wed May  5 17:26:13 2021
 | Host         : LAPTOP-OT7UM52C running 64-bit major release  (build 9200)
 | Command      : report_methodology -file VLC_methodology_drc_routed.rpt -pb VLC_methodology_drc_routed.pb -rpx VLC_methodology_drc_routed.rpx
 | Design       : VLC
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 32
+             Violations found: 31
 +-----------+----------+-------------------+------------+
 | Rule      | Severity | Description       | Violations |
 +-----------+----------+-------------------+------------+
-| TIMING-20 | Warning  | Non-clocked latch | 32         |
+| TIMING-20 | Warning  | Non-clocked latch | 31         |
 +-----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
@@ -154,40 +154,35 @@ Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
-The latch Y_reg[31] cannot be properly analyzed as its control pin Y_reg[31]/G is not reached by a timing clock
+The latch Y_reg[3] cannot be properly analyzed as its control pin Y_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#26 Warning
 Non-clocked latch  
-The latch Y_reg[3] cannot be properly analyzed as its control pin Y_reg[3]/G is not reached by a timing clock
+The latch Y_reg[4] cannot be properly analyzed as its control pin Y_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#27 Warning
 Non-clocked latch  
-The latch Y_reg[4] cannot be properly analyzed as its control pin Y_reg[4]/G is not reached by a timing clock
+The latch Y_reg[5] cannot be properly analyzed as its control pin Y_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#28 Warning
 Non-clocked latch  
-The latch Y_reg[5] cannot be properly analyzed as its control pin Y_reg[5]/G is not reached by a timing clock
+The latch Y_reg[6] cannot be properly analyzed as its control pin Y_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#29 Warning
 Non-clocked latch  
-The latch Y_reg[6] cannot be properly analyzed as its control pin Y_reg[6]/G is not reached by a timing clock
+The latch Y_reg[7] cannot be properly analyzed as its control pin Y_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#30 Warning
 Non-clocked latch  
-The latch Y_reg[7] cannot be properly analyzed as its control pin Y_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#31 Warning
-Non-clocked latch  
 The latch Y_reg[8] cannot be properly analyzed as its control pin Y_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#32 Warning
+TIMING-20#31 Warning
 Non-clocked latch  
 The latch Y_reg[9] cannot be properly analyzed as its control pin Y_reg[9]/G is not reached by a timing clock
 Related violations: <none>

@@ -20,21 +20,60 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module VLC(A,B,S,Y);
+module VLC(A,B,AluOp,result);
 input [31:0]A,B;
-input [3:0]S;
-output reg [31:0]Y;
+input [3:0]AluOp;
+output [31:0] result;
+wire [31:0] ArithmOut,LogicOut;
+
+arithmetic(A,B,AluOp,ArithmOut);
+logic(A,B,AluOp,LogicOut);
+
+assign result = (AluOp[2]) ? LogicOut : ArithmOut;
+endmodule
 
 
-always@(S) begin
-    case(S)
-        4'b0000 : Y = A+B;
-        4'b0010 : Y = A-B;
-        4'b0100 : Y = A&B;
-        4'b0101 : Y = A|B;
-        4'b0110 : Y = A^B;
-        4'b0111 : Y = ~(A|B);
-        4'b1010 : Y[31] = (A-B) ? 1 : 0;
-    endcase;
-end
+
+
+
+module arithmetic(A,B,AluOp,ArithmOut);
+input [31:0] A,B;
+input [3:0] AluOp;
+output ArithmOut;
+wire [31:0] AdderOut;
+wire [31:0] extended;
+
+
+//Check if add or sub has to be done:
+assign AdderOut = (AluOp[1]) ? (A+B) : (A+(~B));
+
+//Check if output is slt or adderOut:
+assign extended = 31'b0;
+assign extended[31] = AdderOut[31];
+assign ArithmOut = (AluOp[3]) ? extended : AdderOut;
+endmodule
+
+
+
+
+
+module logic(A,B,AluOp,LogicOut);
+input [31:0] A,B;
+input [3:0] AluOp;
+output reg LogicOut;
+wire [31:0] AND,OR,NOR,XOR;
+
+
+and(AND,A,B);
+or(OR,A,B);
+nor(NOR,A,B);
+xor(XOR,A,B);
+
+always @ (*) 
+    case(AluOp[2:1])
+        0: LogicOut <= AND;
+        1: LogicOut <= OR;
+        2: LogicOut <= NOR;
+        3: LogicOut <= XOR;
+    endcase
 endmodule
