@@ -2,17 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May  5 17:23:40 2021
-# Process ID: 10584
-# Current directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22968 C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_5\Lab5\Lab5.xpr
-# Log file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/vivado.log
-# Journal file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5\vivado.jou
+# Start of session at: Wed May  5 18:49:47 2021
+# Process ID: 15656
+# Current directory: C:/Users/jstimolo/Documents/GitHub/DigitArchETHZ/LAB_5/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15776 C:\Users\jstimolo\Documents\GitHub\DigitArchETHZ\LAB_5\Lab5\Lab5.xpr
+# Log file: C:/Users/jstimolo/Documents/GitHub/DigitArchETHZ/LAB_5/Lab5/vivado.log
+# Journal file: C:/Users/jstimolo/Documents/GitHub/DigitArchETHZ/LAB_5/Lab5\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.xpr}
+open_project C:/Users/jstimolo/Documents/GitHub/DigitArchETHZ/LAB_5/Lab5/Lab5.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-open_run impl_1
