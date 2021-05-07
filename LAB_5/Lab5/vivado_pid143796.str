@@ -1,0 +1,318 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 143796
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri May 07 14:53:46 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2256x1504
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	jstimolo
+User home directory: C:/Users/jstimolo
+User working directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5
+User country: 	CH
+User language: 	it
+User locale: 	it_CH
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/jstimolo/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/vivado.log
+Vivado journal file location: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/vivado.jou
+Engine tmp dir: 	C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/.Xil/Vivado-143796-LAPTOP-OT7UM52C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,040 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 105 MB (+107898kb) [00:00:07]
+// [Engine Memory]: 1,040 MB (+938822kb) [00:00:07]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_5\Lab5\Lab5.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,040 MB. GUI used memory: 64 MB. Current time: 5/7/21, 2:53:47 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 125 MB (+15527kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3378 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 1075.828 ; gain = 0.000 
+// Project name: Lab5; location: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VLC (VLC.v)]", 1, true); // D - Node
+// [GUI Memory]: 142 MB (+11371kb) [00:00:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VLC (VLC.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 151 MB (+1905kb) [00:00:25]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri May  7 14:54:09 2021] Launched synth_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.runs/synth_1/runme.log [Fri May  7 14:54:09 2021] Launched impl_1... Run output will be captured here: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 89 MB. Current time: 5/7/21, 2:56:07 PM CEST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 382ms to process. Increasing delay to 2000 ms.
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,864 MB. GUI used memory: 89 MB. Current time: 5/7/21, 2:56:19 PM CEST
+// [Engine Memory]: 1,865 MB (+811222kb) [00:02:43]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,978 MB (+20405kb) [00:02:45]
+// Device: addNotify
+// [GUI Memory]: 161 MB (+2128kb) [00:02:47]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2917 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1307.266 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1968.656 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1968.656 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1968.656 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2081.398 ; gain = 1005.570 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 176 MB (+6761kb) [00:02:50]
+// 'dV' command handler elapsed time: 23 seconds
+// Elapsed time: 93 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1319 ms.
+// Device view-level: 0.1
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bz
+// Elapsed time: 285 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VLC (VLC.v)]", 1, true); // D - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VLC.v", 2); // m
+selectCodeEditor("VLC.v", 612, 390); // bP
+selectCodeEditor("VLC.v", 577, 345); // bP
+// Elapsed time: 113 seconds
+selectCodeEditor("VLC.v", 410, 526); // bP
+selectCodeEditor("VLC.v", 860, 423); // bP
+selectCodeEditor("VLC.v", 525, 235); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("VLC.v", 304, 481); // bP
+selectCodeEditor("VLC.v", 720, 559); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("VLC.v", 388, 481); // bP
+selectCodeEditor("VLC.v", 430, 510); // bP
+selectCodeEditor("VLC.v", 518, 209); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("VLC.v", 277, 333); // bP
+selectCodeEditor("VLC.v", 478, 173); // bP
+// Elapsed time: 450 seconds
+selectCodeEditor("VLC.v", 104, 426); // bP
+selectCodeEditor("VLC.v", 125, 513); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// Elapsed time: 19 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VLC.v", 2); // m
+selectCodeEditor("VLC.v", 248, 588); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+floatFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // az
+// PAResourceOtoP.PAViews_PROJECT_SUMMARY: Project Summary: float view
+// [GUI Memory]: 186 MB (+1938kb) [00:21:06]
+// [GUI Memory]: 197 MB (+1215kb) [00:21:06]
+// [GUI Memory]: 211 MB (+4337kb) [00:21:06]
+// Elapsed time: 35 seconds
+closeFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // az
+dockFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // az
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Timing_Delay.xdc]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Timing_Delay.xdc]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 44 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// Elapsed time: 47 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "Reports"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TIMING_SUMMARY
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aK
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "max_paths = 10; ", 2, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_1 ;  ;  ;  ; ", 5, "impl_1", 0, true); // O - Node
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Route Status - Route Design ; report_route_status ;  ; Fri May 07 14:56:00 CEST 2021 ; 588", 28, "Route Status - Route Design", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Route Status - Route Design ; report_route_status ;  ; Fri May 07 14:56:00 CEST 2021 ; 588", 28, "Route Status - Route Design", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Route Status - Route Design ; report_route_status ;  ; Fri May 07 14:56:00 CEST 2021 ; 588", 28); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Route Status - Route Design ; report_route_status ;  ; Fri May 07 14:56:00 CEST 2021 ; 588", 28, "Route Status - Route Design", 0, false, false, false, false, false, true); // O - Double Click
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PAR_REPORT, "PAR Report"); // c
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Power - Route Design ; report_power ;  ; Fri May 07 14:56:00 CEST 2021 ; 7932", 27, "Power - Route Design", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false, false, false, false, false, true); // O - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Design Initialization ; report_timing_summary ; max_paths = 10;  ;  ; ", 7, "Timing Summary - Design Initialization", 0, false, false, false, false, false, true); // O - Double Click
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Place Design (place_design) ;  ;  ;  ; ", 13, "Place Design (place_design)", 0, true); // O - Node
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Route Design ; report_timing_summary ; max_paths = 10;  ; Fri May 07 14:56:00 CEST 2021 ; 10658", 29, "Timing Summary - Route Design", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Route Design ; report_timing_summary ; max_paths = 10;  ; Fri May 07 14:56:00 CEST 2021 ; 10658", 29, "Timing Summary - Route Design", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Route Design ; report_timing_summary ; max_paths = 10;  ; Fri May 07 14:56:00 CEST 2021 ; 10658", 29); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Route Design ; report_timing_summary ; max_paths = 10;  ; Fri May 07 14:56:00 CEST 2021 ; 10658", 29, "Timing Summary - Route Design", 0, false, false, false, false, false, true); // O - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("Timing Summary - Route Design - impl_1", 285, 414); // G
+// Elapsed time: 232 seconds
+floatFrame(PAResourceOtoP.PAViews_PAR_REPORT, "Timing Summary - Route Design - impl_1"); // az
+// PAResourceOtoP.PAViews_PAR_REPORT: PAR Report: float view
+// Elapsed time: 15 seconds
+selectTreeTableHeader(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Options", 2); // O
+selectCodeEditor("Timing_Delay.xdc", 404, 703); // bP
+// Elapsed time: 140 seconds
+closeFrame(PAResourceOtoP.PAViews_PAR_REPORT, "Timing Summary - Route Design - impl_1"); // az
+dockFrame(PAResourceOtoP.PAViews_PAR_REPORT, "Timing Summary - Route Design - impl_1"); // az
+closeView(PAResourceOtoP.PAViews_PAR_REPORT, "PAR Report"); // c
+// HMemoryUtils.trashcanNow. Engine heap size: 2,072 MB. GUI used memory: 130 MB. Current time: 5/7/21, 3:26:22 PM CEST
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY

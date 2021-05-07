@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May  5 17:25:13 2021
-# Process ID: 24448
+# Start of session at: Fri May  7 14:55:11 2021
+# Process ID: 17640
 # Current directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.runs/impl_1
 # Command line: vivado.exe -log VLC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VLC.tcl -notrace
 # Log file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/Lab5.runs/impl_1/VLC.vdi
