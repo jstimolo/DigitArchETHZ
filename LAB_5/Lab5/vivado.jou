@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri May  7 14:53:25 2021
-# Process ID: 143796
+# Start of session at: Wed May 12 16:07:50 2021
+# Process ID: 9100
 # Current directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent854828 C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_5\Lab5\Lab5.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10584 C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_5\Lab5\Lab5.xpr
 # Log file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5/vivado.log
 # Journal file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_5/Lab5\vivado.jou
 #-----------------------------------------------------------
@@ -16,3 +16,26 @@ reset_run synth_1
 launch_runs impl_1 -jobs 4
 wait_on_run impl_1
 open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design

@@ -1,0 +1,4 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+  11 tests completed with    0 errors
+$finish called at time : 1100 ns : File "C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sim_1/imports/lab6_files/ALU_test.v" Line 117

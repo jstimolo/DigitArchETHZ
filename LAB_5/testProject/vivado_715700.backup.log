@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  7 19:34:27 2021
+# Process ID: 715700
+# Current directory: C:/Users/jstimolo/Desktop/testProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent637564 C:\Users\jstimolo\Desktop\testProject\testProject.xpr
+# Log file: C:/Users/jstimolo/Desktop/testProject/vivado.log
+# Journal file: C:/Users/jstimolo/Desktop/testProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jstimolo/Desktop/testProject/testProject.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/jstimolo/Desktop/testProject/testProject.gen/sources_1', nor could it be found using path 'C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 1106.285 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  7 20:33:43 2021...

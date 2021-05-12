@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1620314655">
+  <File Type="PA-TCL" Name="alu.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="alu_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="alu_reports.tcl"/>
+  <File Type="RDS-RDS" Name="alu.vds"/>
+  <File Type="RDS-UTIL" Name="alu_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="alu_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="alu.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="alu_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="alu_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Adder.v"/>
+        <Attr Name="ImportTime" Val="1619259818"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/And32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/And32.v"/>
+        <Attr Name="ImportTime" Val="1620305953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ArDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/ArDecoder.v"/>
+        <Attr Name="ImportTime" Val="1619181612"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Arithmetic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Arithmetic.v"/>
+        <Attr Name="ImportTime" Val="1620229375"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FullAdder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/FullAdder.v"/>
+        <Attr Name="ImportTime" Val="1619259547"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LogDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/LogDecoder.v"/>
+        <Attr Name="ImportTime" Val="1619255360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Logic.v"/>
+        <Attr Name="ImportTime" Val="1620229378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Multiplexer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Multiplexer.v"/>
+        <Attr Name="ImportTime" Val="1619765248"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Nor32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Nor32.v"/>
+        <Attr Name="ImportTime" Val="1620305953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Or32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Or32.v"/>
+        <Attr Name="ImportTime" Val="1620305953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ResultSelectorAr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/ResultSelectorAr.v"/>
+        <Attr Name="ImportTime" Val="1619254962"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ResultSelectorLog.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/ResultSelectorLog.v"/>
+        <Attr Name="ImportTime" Val="1619255360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Slt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Slt.v"/>
+        <Attr Name="ImportTime" Val="1620305953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Subtract.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Subtract.v"/>
+        <Attr Name="ImportTime" Val="1620306248"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Xor32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/Xor32.v"/>
+        <Attr Name="ImportTime" Val="1619255360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/sources_1/imports/new/alu.v"/>
+        <Attr Name="ImportTime" Val="1619765342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab6_files/bad_ALU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_files/bad_ALU.v"/>
+        <Attr Name="ImportTime" Val="1620227542"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/testvectors_hex1.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Desktop/testvectors_hex1.mem"/>
+        <Attr Name="ImportTime" Val="1620232977"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="alu"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/Constr.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Testamento/Testamento.srcs/constrs_1/imports/new/Constr.xdc"/>
+        <Attr Name="ImportTime" Val="1619171478"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

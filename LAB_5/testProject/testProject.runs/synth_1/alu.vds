@@ -1,0 +1,462 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  6 17:24:18 2021
+# Process ID: 19068
+# Current directory: C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.runs/synth_1
+# Command line: vivado.exe -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+# Log file: C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.runs/synth_1/alu.vds
+# Journal file: C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu.tcl -notrace
+Command: synth_design -top alu -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1672
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Arithmetic' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Arithmetic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ArDecoder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ArDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ArDecoder' (1#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ArDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BitAdder32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:69]
+INFO: [Synth 8-6157] synthesizing module 'BitAdder16' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:61]
+INFO: [Synth 8-6157] synthesizing module 'EightBitAdder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:52]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:39]
+INFO: [Synth 8-6157] synthesizing module 'FullAdder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FullAdder' (2#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder' (3#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'EightBitAdder' (4#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'BitAdder16' (5#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'BitAdder32' (6#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/FullAdder.v:69]
+WARNING: [Synth 8-689] width (32) of port connection 's' does not match port width (33) of module 'BitAdder32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Adder.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (7#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Subtract' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Subtract.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Subtract' (8#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Subtract.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Slt' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Slt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Slt' (9#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Slt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ResultSelectorAr' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ResultSelectorAr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ResultSelectorAr' (10#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ResultSelectorAr.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Result' does not match port width (33) of module 'ResultSelectorAr' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Arithmetic.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Arithmetic' (11#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Arithmetic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Logic' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Logic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LogDecoder' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/LogDecoder.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/LogDecoder.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'LogDecoder' (12#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/LogDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'And32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/And32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'And32' (13#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/And32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Or32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Or32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Or32' (14#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Or32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Xor32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Xor32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Xor32' (15#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Xor32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Nor32' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Nor32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Nor32' (16#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Nor32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ResultSelectorLog' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ResultSelectorLog.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ResultSelectorLog' (17#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/ResultSelectorLog.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Logic' (18#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Logic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer' [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Multiplexer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer' (19#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/Multiplexer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (20#1) [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/sources_1/imports/new/alu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1017.441 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Constraints 18-402] set_max_delay: 'result[0]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[10]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[11]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[12]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[13]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[14]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[15]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[16]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[17]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[18]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[19]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[1]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[20]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[21]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[22]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[23]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[24]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[25]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[26]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[27]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[28]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[29]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[2]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[30]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[31]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[3]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[4]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[5]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[6]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[7]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[8]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[9]' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'zero_flag' is not a valid startpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'AluOp[0]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'AluOp[1]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'AluOp[2]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'AluOp[3]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[0]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[10]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[11]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[12]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[13]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[14]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[15]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[16]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[17]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[18]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[19]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[1]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[20]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[21]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[22]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[23]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[24]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[25]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[26]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[27]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[28]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[29]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[2]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[30]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[31]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[3]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[4]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[5]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[6]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[7]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[8]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'a[9]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[0]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[10]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[11]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[12]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[13]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[14]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[15]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[16]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[17]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[18]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[19]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[1]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[20]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[21]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[22]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[23]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[24]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[25]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[26]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[27]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[28]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[29]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[2]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[30]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[31]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[3]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[4]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[5]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[6]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[7]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[8]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'b[9]' is not a valid endpoint. [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.srcs/constrs_1/imports/new/Constr.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1017.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.570 ; gain = 0.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.570 ; gain = 0.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.570 ; gain = 0.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1017.570 ; gain = 0.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 64    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1017.570 ; gain = 0.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1027.605 ; gain = 10.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1027.828 ; gain = 10.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.910 ; gain = 29.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT2   |    54|
+|3     |LUT3   |     2|
+|4     |LUT4   |    33|
+|5     |LUT5   |    51|
+|6     |LUT6   |    64|
+|7     |MUXF7  |    21|
+|8     |IBUF   |    68|
+|9     |OBUF   |    33|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1056.406 ; gain = 38.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1056.406 ; gain = 38.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1068.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1069.473 ; gain = 52.031
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cesab/Documents/ETH/2 sem/Digital design/Lab/Week6/testProject/testProject.runs/synth_1/alu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_utilization_synth.rpt -pb alu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  6 17:24:51 2021...
