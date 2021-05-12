@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 12 15:35:44 2021
+# Process ID: 7416
+# Current directory: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15252 C:\Users\jstimolo\Documents\ETHZ\FS21\Digital Design and Computer Architecture\LAB_6\lab6\lab6.xpr
+# Log file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6/vivado.log
+# Journal file: C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6/lab6.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6_files/ALU_test.v} {C:/Users/jstimolo/Documents/ETHZ/FS21/Digital Design and Computer Architecture/LAB_6/lab6_files/bad_ALU.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
