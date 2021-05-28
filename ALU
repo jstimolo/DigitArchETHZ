@@ -21,7 +21,10 @@
 module ALU( 
   input  [31:0] a,
   input  [31:0] b,
-  input  [3:0] aluop,
+  input  [5:0] aluop, // FIRST CHANGE
+  input  [4:0] ShAmt, // shift amount
+  input  reset,
+  input  CLK,
   output [31:0] result,
   output zero
  );
@@ -35,12 +38,27 @@ module ALU(
   
   wire [1:0] logicsel;    // lower two bits of aluop;
   
+  wire [31:0] srl;
+  reg [31:0] Lo;
+  reg [31:0] resreg;
+  
   // logic select 
   assign logicsel = aluop[1:0];
   assign logicout = (logicsel == 2'b00) ? a & b :
                     (logicsel == 2'b01) ? a | b :
                     (logicsel == 2'b10) ? a ^ b :
                                         ~(a | b);
+                                     
+ assign srl = (b >> ShAmt);
+  
+ always @(posedge CLK, posedge reset)
+ begin
+ if (reset)
+     Lo = 32'b0;
+ 
+ else if (aluop == 6'b011001) 
+     Lo = a*b;
+ end
   
   // adder subtractor
   assign n_b = ~b ;  // invert b
@@ -53,20 +71,16 @@ module ALU(
   // arith out
   assign arithout = (aluop[3]) ? slt : addout;
   
-  // final out
-  assign result = (aluop[2]) ? logicout : arithout;
+  always @*
+  case(aluop)
+  6'b010010:  resreg = Lo;
+  6'b000010: resreg = srl;
+  default: resreg = aluop[2] ? logicout : arithout;
+  endcase
+  
+  assign result = resreg;
+  
   // the zero
   assign zero = (result == 32'b0) ? 1: 0;
   
 endmodule
-
-
-
-
-
-
-
-
-
-
-
